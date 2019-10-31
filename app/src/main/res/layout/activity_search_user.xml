@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.searchUser.SearchUserActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/MaterialAnimations.TextAppearance.Title"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/colorPrimary">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/search_user_by_email"
+            android:theme="@style/MyEditTextTheme"
+            android:id="@+id/et_email"
+            android:drawableEnd="@android:drawable/ic_search_category_default"
+            android:drawableTint="@color/white"
+            android:textColorHint="#dddddd"
+            android:inputType="textEmailAddress"/>
+
+       <!-- <EditText
+
+            android:hint="@string/search_user_by_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+            />-->
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/medium_padding"
+        android:id="@+id/rv_user"
+        android:layout_below="@+id/toolbar">
+
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

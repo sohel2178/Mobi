@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#eeeeeeee"
+    tools:context=".ui.main.payment.PaymentFragment">
+
+
+    <TextView
+        android:layout_margin="@dimen/large_padding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:lineSpacingExtra="@dimen/small_padding"
+        android:background="@android:color/white"
+        android:textSize="@dimen/summery_text_size"
+        android:padding="@dimen/default_margin"
+        android:text="@string/payment_title"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_steps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:clipToPadding="false"
+        tools:listitem="@layout/item_step"/>
+
+</LinearLayout>

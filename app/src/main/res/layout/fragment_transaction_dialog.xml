@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.newExpenses.helper.transaction.TransactionDialogFragment">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/small_padding">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/default_margin"
+                    android:text="Add New Transaction"
+                    android:textAllCaps="true"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginEnd="@dimen/default_margin"
+                    android:layout_marginStart="@dimen/default_margin"
+                    android:background="@color/light_grey" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="@dimen/default_margin">
+
+                    <TextView
+                        style="@style/TaskTitle"
+                        android:layout_marginTop="@dimen/small_padding"
+                        android:padding="@dimen/small_padding"
+                        android:text="@string/select_head"
+                        android:textSize="14sp" />
+
+                    <android.support.v7.widget.AppCompatSpinner
+                        android:id="@+id/sp_head"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/small_padding"
+                        android:background="@drawable/bg_spinner_new"
+                        android:dropDownWidth="wrap_content"/>
+
+                    <TextView
+                        style="@style/TaskTitle"
+                        android:layout_marginTop="@dimen/small_padding"
+                        android:padding="@dimen/small_padding"
+                        android:text="@string/select_vehicle"
+                        android:textSize="14sp" />
+
+                    <android.support.v7.widget.AppCompatSpinner
+                        android:id="@+id/sp_vehicle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/small_padding"
+                        android:background="@drawable/bg_spinner_new"
+                        android:dropDownWidth="wrap_content"/>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_marginTop="@dimen/default_margin"
+                        android:id="@+id/ti_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/et_date"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/tranaction_date"
+                            android:inputType="text"
+                            android:paddingStart="@dimen/default_margin"
+                            android:focusable="false"
+                            android:theme="@style/TIStyle" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_marginTop="@dimen/small_padding"
+                        android:id="@+id/ti_purpose"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/purpose"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/purpose"
+                            android:inputType="text"
+                            android:paddingStart="@dimen/default_margin"
+                            android:theme="@style/TIStyle" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_marginTop="@dimen/small_padding"
+                        android:id="@+id/ti_amount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/amount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/amount"
+                            android:inputType="numberDecimal"
+                            android:paddingStart="@dimen/default_margin"
+                            android:theme="@style/TIStyle" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/medium_padding">
+
+                    <TextView
+                        android:id="@+id/delete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/my_ripple"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:text="Delete"
+                        android:textAllCaps="true"
+                        android:visibility="gone"
+                        android:textColor="@color/red"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true">
+
+                        <TextView
+                            android:id="@+id/cancel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/my_ripple"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:text="Cancel"
+                            android:textAllCaps="true"
+                            android:textColor="@color/indicator_4"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/save"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/large_padding"
+                            android:background="@drawable/my_ripple"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:text="Save"
+                            android:textAllCaps="true"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="gone"
+                android:id="@+id/progressBar"/>
+
+        </RelativeLayout>
+
+
+
+
+
+    </android.support.v7.widget.CardView>
+
+</FrameLayout>

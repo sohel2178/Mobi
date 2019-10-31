@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="6dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="12dp"
+    app:cardCornerRadius="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:id="@+id/driver_image"
+                android:src="@drawable/bike"
+                android:layout_centerVertical="true"/>
+
+            <LinearLayout
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/driver_image"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/driver_name"
+                    android:text="Toyota Corola-X"
+                    style="@style/TaskTitle" />
+                <TextView
+                    style="@style/TaskTitle"
+                    android:id="@+id/driver_phone"
+                    android:text="Dhaka Metro Ga 3235"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    style="@style/TaskTitle"
+                    android:id="@+id/model"
+                    android:text="Dhanmondi,Dhaka"
+                    android:textSize="14sp"/>
+
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+
+        <View
+            android:layout_marginStart="@dimen/default_margin"
+            android:layout_marginEnd="@dimen/default_margin"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/medium_padding"
+            android:background="@color/red"
+            android:layout_below="@+id/driver_image"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:padding="@dimen/medium_padding"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginStart="@dimen/small_padding"
+                android:layout_marginEnd="@dimen/small_padding"
+                android:id="@+id/edit"
+                android:src="@drawable/edit"
+                android:tint="@color/white"
+                android:background="@drawable/ripple"/>
+
+            <ImageView
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginStart="@dimen/small_padding"
+                android:layout_marginEnd="@dimen/small_padding"
+                android:id="@+id/share"
+                android:src="@drawable/share"
+                android:tint="@color/white"
+                android:background="@drawable/ripple"/>
+
+            <ImageView
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginStart="@dimen/small_padding"
+                android:layout_marginEnd="@dimen/small_padding"
+                android:id="@+id/share_user"
+                android:src="@drawable/user"
+                android:tint="@color/white"
+                android:background="@drawable/ripple"/>
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</android.support.v7.widget.CardView>

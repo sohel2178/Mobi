@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "137388183850",
+    "firebase_url": "https://mobitrack-f4036.firebaseio.com",
+    "project_id": "mobitrack-f4036",
+    "storage_bucket": "mobitrack-f4036.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:137388183850:android:b624e8b39f6015be",
+        "android_client_info": {
+          "package_name": "com.mobitrack.mobi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "137388183850-7a1pt336j6ctuihp2lcseju93fdq6k8m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mobitrack.mobi",
+            "certificate_hash": "991ba318b04097e9bcc1ad0d5dea4fbe6a8d3894"
+          }
+        },
+        {
+          "client_id": "137388183850-b5metd58fr5vt3le9v6647hiifm3c40i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB93k4P8CSjUzMXr_8Yjibx-ouOs7WTQf8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "137388183850-b5metd58fr5vt3le9v6647hiifm3c40i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

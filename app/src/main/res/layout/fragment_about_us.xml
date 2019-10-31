@@ -1,0 +1,226 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.mobitrack.mobi.fragments.AboutUsFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/content_first"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/first_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FF0000"
+                    android:gravity="center_horizontal"
+                    android:textSize="18sp"
+                    android:text="Our Services" />
+
+                <LinearLayout
+                    android:id="@+id/list"
+                    android:layout_below="@+id/first_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/medium_padding">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="@dimen/default_margin"
+                            android:layout_height="@dimen/default_margin"
+                            android:src="@drawable/bullet"
+                            android:layout_gravity="center_vertical"/>
+                        <TextView
+                            android:id="@+id/item_1"
+                            android:text="24/7 Monitoring by Mobi Track"
+                            style="@style/aboutus_list" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="@dimen/default_margin"
+                            android:layout_height="@dimen/default_margin"
+                            android:layout_marginTop="4dp"
+                            android:src="@drawable/bullet" />
+                        <TextView
+                            android:id="@+id/item_2"
+                            android:text="Advanced Technological System – Developed with high recovery rate performance in mind"
+                            style="@style/aboutus_list"
+                            android:gravity="top|left"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="@dimen/default_margin"
+                            android:layout_height="@dimen/default_margin"
+                            android:src="@drawable/bullet"
+                            android:layout_gravity="center_vertical"/>
+                        <TextView
+                            android:id="@+id/item_3"
+                            android:text="Real-time vehicle tracking system"
+                            style="@style/aboutus_list" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="@dimen/default_margin"
+                            android:layout_height="@dimen/default_margin"
+                            android:src="@drawable/bullet"
+                            android:layout_gravity="center_vertical"/>
+                        <TextView
+                            android:id="@+id/item_4"
+                            android:text="Instant vehicle tracking reports"
+                            style="@style/aboutus_list" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="@dimen/default_margin"
+                            android:layout_height="@dimen/default_margin"
+                            android:src="@drawable/bullet"
+                            android:layout_gravity="center_vertical"/>
+                        <TextView
+                            android:id="@+id/item_5"
+                            android:text="Direct alerts"
+                            style="@style/aboutus_list" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="@dimen/default_margin"
+                            android:layout_height="@dimen/default_margin"
+                            android:src="@drawable/bullet"
+                            android:layout_gravity="center_vertical"/>
+                        <TextView
+                            android:id="@+id/item_6"
+                            android:text="Reduce fuel cost &amp; save money"
+                            style="@style/aboutus_list" />
+                    </LinearLayout>
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/about_us_details"
+                        android:textAlignment="center"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/content_second"
+                android:layout_below="@+id/content_first"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/second_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FF0000"
+                    android:textSize="18sp"
+                    android:gravity="center_horizontal"
+                    android:text="Why You Need GPS Tracking System?" />
+
+                <LinearLayout
+                    android:id="@+id/list_two"
+                    android:layout_below="@+id/second_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/medium_padding">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="@dimen/default_margin"
+                            android:layout_height="@dimen/default_margin"
+                            android:src="@drawable/bullet"
+                            android:layout_gravity="center_vertical"/>
+                        <TextView
+                            android:id="@+id/item_7"
+                            android:text="Large number of stolen cars never recovered"
+                            style="@style/aboutus_list" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="@dimen/default_margin"
+                            android:layout_height="@dimen/default_margin"
+                            android:layout_marginTop="4dp"
+                            android:src="@drawable/bullet" />
+                        <TextView
+                            android:id="@+id/item_8"
+                            android:text="Organized car theft organizations common in all over the country"
+                            style="@style/aboutus_list"
+                            android:gravity="top|left"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="@dimen/default_margin"
+                            android:layout_height="@dimen/default_margin"
+                            android:src="@drawable/bullet"
+                            android:layout_gravity="center_vertical"/>
+                        <TextView
+                            android:id="@+id/item_9"
+                            android:text="Car theft patterns changed to overcome latest technology vehicle security"
+                            style="@style/aboutus_list" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="@dimen/default_margin"
+                            android:layout_height="@dimen/default_margin"
+                            android:src="@drawable/bullet"
+                            android:layout_gravity="center_vertical"/>
+                        <TextView
+                            android:id="@+id/item_10"
+                            android:text="Over 70% of vehicles are stolen with keys resulting in house breakings and personal attack on occasions"
+                            style="@style/aboutus_list" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="@dimen/default_margin"
+                            android:layout_height="@dimen/default_margin"
+                            android:src="@drawable/bullet"
+                            android:layout_gravity="center_vertical"/>
+                        <TextView
+                            android:id="@+id/item_11"
+                            android:text="Your car is 10 times safer from stealing if fitted with a vehicle tracking security device"
+                            style="@style/aboutus_list" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

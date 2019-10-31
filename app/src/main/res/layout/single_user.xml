@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/medium_padding">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/image"/>
+
+        <LinearLayout
+            android:layout_toEndOf="@+id/image"
+            android:layout_toStartOf="@+id/btn_share"
+            android:layout_marginStart="@dimen/default_margin"
+            android:layout_marginEnd="@dimen/default_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TaskTitle"
+                android:textSize="14sp"
+                android:id="@+id/name" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TaskTitle"
+                android:textSize="12sp"
+                android:textStyle="italic"
+                android:id="@+id/email" />
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            style="@style/MyButton"
+            android:padding="0dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/btn_share"
+            android:text="@string/share"/>
+
+       <!-- <com.dd.CircularProgressButton
+            android:id="@+id/btn_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            app:cpb_textComplete="@string/complete"
+            app:cpb_textError="@string/error"
+            app:cpb_textIdle="@string/share" />-->
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
+

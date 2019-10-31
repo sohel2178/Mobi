@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="D:\AndroidProjectNew\Mobi\app\src\main\assets"><file name="fonts/digital_7.ttf" path="D:\AndroidProjectNew\Mobi\app\src\main\assets\fonts\digital_7.ttf"/></source><source path="D:\AndroidProjectNew\Mobi\app\build\generated\assets\shaders\debug"/></dataSet><dataSet config="debug"><source path="D:\AndroidProjectNew\Mobi\app\src\debug\assets"/></dataSet></merger>

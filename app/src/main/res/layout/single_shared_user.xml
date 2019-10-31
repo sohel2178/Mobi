@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/view_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/delete_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/default_margin"
+            android:src="@drawable/delete"
+            android:tint="@color/white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/default_margin"
+            android:layout_toStartOf="@id/delete_icon"
+            android:text="DELETE"
+            android:textColor="#fff"
+            android:textSize="13dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/view_foreground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:padding="@dimen/default_margin">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image"
+            android:layout_centerVertical="true"
+            android:layout_width="80dp"
+            android:layout_height="80dp" />
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:track="@drawable/switch_track_custom"
+            android:theme="@style/MySwitch"
+            android:id="@+id/user_switch"/>
+
+        <LinearLayout
+            android:layout_toEndOf="@+id/image"
+            android:layout_toStartOf="@+id/user_switch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/large_padding"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TaskTitle"
+                android:textSize="20sp"
+                android:id="@+id/name"
+                android:padding="0dp"
+                android:text="Sohel Ahmed"
+                android:textStyle="italic"/>
+
+            <TextView
+                style="@style/TaskTitle"
+                android:textSize="16sp"
+                android:padding="0dp"
+                android:id="@+id/company_name"
+                android:text="CPSD"
+                android:textStyle="bold" />
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</FrameLayout>
+

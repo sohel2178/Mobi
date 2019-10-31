@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.mobitrack.mobi.fragments.UserListFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/TaskTitle"
+        android:text="@string/select_user"
+        android:gravity="center_horizontal"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:id="@+id/title"
+        android:padding="@dimen/default_margin"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:padding="@dimen/default_margin">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/search_by_user_email"
+            android:id="@+id/et_search"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_search"
+            android:id="@+id/rv_user"/>
+
+    </RelativeLayout>
+
+
+
+
+
+
+</RelativeLayout>

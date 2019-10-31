@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="@style/Theme.AppCompat.Light.NoActionBar">
+
+        <item name="android:textColorPrimary">@android:color/black</item>
+        <item name="android:textColorPrimaryInverse">@color/text_light</item>
+        <item name="android:textColor">@color/text_dark</item>
+        <item name="android:windowBackground">@color/light_grey</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+        <item name="colorControlNormal">@color/text_light</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+
+    </style>
+
+    <style name="TIStyle">
+        <item name="colorControlNormal">#c5c5c5</item>
+        <item name="colorControlActivated">@color/icon_color</item>
+        <item name="colorControlHighlight">@color/icon_color</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+    </style>
+
+    <style name="DrawerArrowStyle" parent="@style/Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@android:color/white</item>
+    </style>
+
+    <style name="ToolbarStyle" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+        <!-- Customize color of navigation drawer icon and back arrow -->
+        <item name="colorControlNormal">@color/colorPrimary</item>
+
+    </style>
+
+    <style name="MaterialAnimations.TextAppearance.Title.Inverse" parent="AppTheme">
+        <item name="android:textColor">?android:textColorPrimaryInverse</item>
+    </style>
+
+    <style name="NameTextStyle">
+        <item name="android:layout_marginBottom">@dimen/default_margin</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/text_light</item>
+        <item name="android:padding">@dimen/small_padding</item>
+    </style>
+
+    <style name="EmailTextStyle" parent="NameTextStyle">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="SmallHeader">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/large_text_size</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textStyle">italic|bold</item>
+        <item name="android:layout_marginBottom">@dimen/small_padding</item>
+    </style>
+
+    <style name="MyButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/default_margin</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@drawable/rect_ripple</item>
+    </style>
+
+    <style name="TaskTextStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:fontFamily">@font/railway_regular</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:padding">@dimen/very_small_padding</item>
+        <item name="android:textSize">@dimen/normal_text_size</item>
+        <item name="android:textColor">@color/normal_text_color</item>
+    </style>
+
+    <style name="TaskTitle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/railway_regular</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingTop">@dimen/small_padding</item>
+        <item name="android:paddingBottom">@dimen/small_padding</item>
+        <item name="android:textSize">@dimen/title_text_size</item>
+    </style>
+
+    <style name="TransactionTitle" parent="TaskTitle">
+        <item name="android:textSize">@dimen/transaction_title_text_size</item>
+    </style>
+
+    <style name="myDialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="MyEditTextStyle">
+        <item name="android:layout_marginTop">@dimen/default_margin</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/edit_text_height</item>
+        <item name="android:fontFamily">@font/railway_regular</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="MyCalendarStyle">
+        <item name="android:layout_marginTop">@dimen/default_margin</item>
+        <item name="android:layout_width">@dimen/edit_text_height</item>
+        <item name="android:layout_height">@dimen/edit_text_height</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+    <style name="MyAutoCompleteStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/edit_text_height</item>
+        <item name="android:layout_marginTop">@dimen/default_margin</item>
+        <item name="android:fontFamily">@font/railway_regular</item>
+    </style>
+
+
+
+
+    <style name="TableHeaderStyle">
+
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:padding">@dimen/medium_padding</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/railway_regular</item>
+
+
+    </style>
+
+    <style name="TableItem" parent="TableHeaderStyle">
+
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@android:color/black</item>
+
+    </style>
+
+    <style name="dailyTransactionStyle" parent="TableItem">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+
+    <style name="NavTextStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#777777</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:padding">@dimen/small_padding</item>
+        <item name="android:layout_marginStart">8dp</item>
+    </style>
+
+    <style name="CustomDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <!--buttons color-->
+        <item name="colorAccent">@android:color/holo_orange_dark</item>
+        <!--title and message color-->
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <!--dialog background-->
+        <item name="android:windowBackground">@drawable/background_dialog</item>
+    </style>
+
+    <style name="MyDialog" parent="CustomDialogTheme">
+        <item name="android:windowBackground">@drawable/my_dialog</item>
+    </style>
+
+    <style name="MyCheckbox" parent="@style/Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat</item>
+        <item name="android:textColor">#7ca011</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="MySwitch" parent="@style/Widget.AppCompat.CompoundButton.Switch">
+        <item name="android:textColorPrimaryDisableOnly">#b71c1c</item>
+        <item name="android:colorForeground">#f57f17</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat</item>
+        <item name="android:thumb">@drawable/switch_thumb</item>
+    </style>
+
+    <style name="SwitchCompatStyle" >
+        <item name="android:thumb">@drawable/switch_thumb</item>
+        <item name="trackTint">@color/light_grey</item>
+    </style>
+
+
+    <style name="MYSpinner" parent="Widget.AppCompat.Spinner.Underlined">
+        <item name="colorAccent">@android:color/white</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="colorControlNormal">@color/green</item>
+        <item name="colorControlActivated">@color/red</item>
+        <item name="colorControlHighlight">@color/blue</item>
+    </style>
+
+    <style name="MYSpinner.Black">
+        <item name="colorAccent">@android:color/black</item>
+    </style>
+
+
+    <style name="MyTheme" parent="android:Theme.Holo.Dialog">
+        <item name="android:alertDialogStyle">@style/CustomAlertDialogStyle</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:textColorPrimary">#FFFFFF</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="CustomAlertDialogStyle">
+        <item name="android:bottomBright">@android:color/white</item>
+        <item name="android:bottomDark">@color/colorAccent</item>
+        <item name="android:bottomMedium">@android:color/white</item>
+        <item name="android:centerBright">@android:color/transparent</item>
+        <item name="android:centerDark">@color/colorAccent</item>
+        <item name="android:centerMedium">@color/colorAccent</item>
+        <item name="android:fullBright">@color/colorAccent</item>
+        <item name="android:fullDark">@android:color/transparent</item>
+        <item name="android:topBright">@android:color/transparent</item>
+        <item name="android:topDark">@android:color/transparent</item>
+    </style>
+
+
+    <style name="aboutus_list">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/medium_padding</item>
+    </style>
+
+    <style name="MyEditTextTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorControlNormal">@color/white</item>
+        <item name="colorControlActivated">@color/white</item>
+        <item name="colorControlHighlight">@color/colorAccent</item>
+    </style>
+
+
+</resources>
